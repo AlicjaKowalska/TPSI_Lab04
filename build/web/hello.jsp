@@ -14,9 +14,9 @@
         <title>Java Web - laboratorium 4</title>
     </head>
     <body>
-        <!Wyrażenie EL formatuje tekst, a JSTL tylko go wyswietla> 
-    <h1>JSTL: Witaj, <c:out value="${person.firstName} ${person.lastName}"/>!</h1>  <!JSTL>
-    <h1>EL: Witaj, ${person.firstName} ${person.lastName}!</h1>                     <!EL>
+        <%--Wyrażenie EL formatuje tekst, a JSTL tylko go wyswietla--%> 
+    <h1>JSTL: Witaj, <c:out value="${person.firstName} ${person.lastName}"/>!</h1>  
+    <h1>EL: Witaj, ${person.firstName} ${person.lastName}!</h1>                     
     <h1><a href="mailto:${person.email}">${person.email}</a></h1>
 
     <c:forEach items="${dniTygodnia}" var="dzien">
